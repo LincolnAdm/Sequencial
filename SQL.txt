@@ -1,0 +1,89 @@
+Create database nome_bd;
+
+use lojas sa;
+
+create table lojas(
+
+	Id int primary key,
+	name varchar key (100),
+	cnpj Int (14),
+	endereco Varchar (1000),
+	telefone int (15)
+);
+
+create table filial(
+	número Int (03),
+	Endereco varchar (1000),
+	telefone int (15)
+);
+
+create table fornecedores(
+	nome varchar (100),
+	telefone int (15),
+	cnpj Int (14),
+	endereco varchar (1000),
+	Id int
+);
+
+create table produto(
+	nome varchar (100),
+	tipo varchar (100)
+	quantidade int (80),
+	codigo int (100),
+	descricao varchar (1000)
+);
+
+create table venda(
+	numero nota fiscal (100),
+	valor int (1000),
+	data date,
+	produto varchar (100)
+);
+
+create table cliente(
+	numero cadastro (100),
+	nome varchar (100),
+	endereco varchar (1000),
+	cpf int (11),
+	telefone int (15),
+	data de nascimento date (08)
+);
+
+
+
+
+create database nome_bd;
+
+use curso;
+
+create table professor(
+	nome varchar (90),
+	idade int,
+	disciplina varchar (30),
+	salaria decimal int (1000)
+);
+
+
+create database nome-bd;
+
+use clinica veterinaria;
+
+create table registro paciente(
+	nome varchar (30),
+	peso varchar (05),
+	idade int (02),
+	nome dono varchar (100),
+	telefone int (15),
+	endereco (1000)
+);
+
+create table medico(
+	nome varchar (100),
+	idade int (02),
+	data admissao date (08),
+	salario int (1000),
+	area responsavel varchar (100)
+);
+
+
+	                                                  
